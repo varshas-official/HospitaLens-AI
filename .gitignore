@@ -1,0 +1,20 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Node and build output
+node_modules/
+frontend/dist/
+dist/
+
+# Local data stores
+*.db
+*.sqlite
+*.sqlite3
+
+# Local environment files. Keep the template safe to commit.
+.env
+.env.*
+!.env.example
