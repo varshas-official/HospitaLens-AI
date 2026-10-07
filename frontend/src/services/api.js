@@ -1,4 +1,4 @@
-const API_BASE = (import.meta.env.VITE_API_BASE_URL || (import.meta.env.DEV ? 'http://localhost:8000' : '')).replace(/\/+$/, '')
+const API_BASE = (import.meta.env.VITE_API_BASE_URL || (import.meta.env.DEV ? 'http://localhost:8010' : '')).replace(/\/+$/, '')
 async function request(path, options) {
   if (!API_BASE && import.meta.env.PROD) throw new Error('VITE_API_BASE_URL must be set to the deployed backend URL.')
   const response = await fetch(`${API_BASE}${path}`, { headers: { 'Content-Type': 'application/json' }, ...options })
